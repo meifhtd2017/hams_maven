@@ -1,4 +1,4 @@
-package com.metime.common.utils;
+package com.metime.common.StringUtils;
 
 public class StringUtils {
 	
