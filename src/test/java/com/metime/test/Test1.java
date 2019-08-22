@@ -1,24 +1,21 @@
 package com.metime.test;
 
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collectors;
+import javax.sql.DataSource;
 
 import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.metime.dir.vo.DirVo;
+import com.metime.login.controller.LoginController;
 
 public class Test1 implements Test2<String>{
 	
-	
+	ApplicationContext ioc = new ClassPathXmlApplicationContext("");
 	
 	@Test
 	public void test1(){
-		Test1 test1 = new Test1();
-		System.out.println(test1.getClass());
-		List<DirVo> list = new ArrayList<>();
-		list.stream().collect(Collectors.groupingBy(DirVo::getfDirId));
+		Object bean = ioc.getBean("dataSource");
+		
 	}
 	
 }

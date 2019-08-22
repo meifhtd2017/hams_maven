@@ -15,7 +15,7 @@ public class LoginController {
 	
 	@RequestMapping("/toLoginPage")
 	public void login(){
-		
+		System.out.println("hello");
 	}
 	
 }
