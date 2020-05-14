@@ -14,8 +14,8 @@ public class LoginController {
 	private LoginService loginService;
 	
 	@RequestMapping("/toLoginPage")
-	public void login(){
-		System.out.println("hello");
+	public String login(){
+		return "login";
 	}
 	
 }

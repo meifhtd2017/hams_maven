@@ -5,4 +5,4 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-<jsp:forward page="/login/toLogin.html"/>
+<jsp:forward page="/login/toLoginPage.html"/>
