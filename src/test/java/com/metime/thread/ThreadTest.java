@@ -1,4 +1,4 @@
-package com.metime.runnable;
+package com.metime.thread;
 
 public class ThreadTest extends Thread{
 	
