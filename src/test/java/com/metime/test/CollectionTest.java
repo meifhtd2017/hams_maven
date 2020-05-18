@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,21 +19,24 @@ public class CollectionTest {
 	public static void main(String[] args) {
 		List<Integer> list = new ArrayList<Integer>();//数据结构数组
 		List<Integer> linkedlist = new LinkedList<Integer>();//链表Node<e>
-		List<Integer> vector = new Vector<Integer>();
+		List<Integer> vector = new Vector<Integer>();//线程安全的。
 		linkedlist.add(2);
 		list.add(1);
 		System.out.println(list);
 		System.out.println(list.size());
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("1", 1);
+		map.put(null, null);
+		map.put(null, null);
+		System.out.println(map);
 		 
-		Set<Integer> treeset = new TreeSet<Integer>();
+		/*Set<Integer> treeset = new TreeSet<Integer>();
 		Set<Integer> hashset = new HashSet<Integer>();
 		
-		Map<String, Integer> hashMap = new HashMap<String, Integer>();
 		Map<String, Integer> treeMap = new TreeMap<String, Integer>();
 		Map<String, Integer> hashtable = new Hashtable<String, Integer>();
 		Map<String, Integer> linkerHashMap = new LinkedHashMap<String, Integer>();
+		Iterator<Integer> iterator = list.iterator();*/
 		
 	}
 	
