@@ -11,8 +11,9 @@ public class Test {
 		ApplicationContext ioc = new ClassPathXmlApplicationContext("spring.xml");
 		System.out.println(ioc);
 		LoginController bean = ioc.getBean(LoginController.class);
-		String login = bean.login();
-		System.out.println(login);
+		LoginController bean1 = ioc.getBean(LoginController.class);
+		System.out.println(bean);
+		System.out.println(bean1);
 	}
 	
 }

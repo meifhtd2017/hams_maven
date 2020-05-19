@@ -22,5 +22,4 @@ public class ReflectTest {
 			e.printStackTrace();
 		}
 	}
-	
 }
