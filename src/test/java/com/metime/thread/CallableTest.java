@@ -14,6 +14,4 @@ public class CallableTest implements Callable<Integer>{
 	}
 
 	
-	
-
 }

@@ -1,9 +1,25 @@
 package com.metime.thread;
 
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.FutureTask;
 
+import org.junit.Test;
+
 public class TestTest {
+	
+	@Test
+	public void test1(){
+		Thread thread = new Thread(new RunnableTest(),"AA");
+		Thread thread1 = new Thread(new RunnableTest(),"BB");
+	}
+	
+	@Test
+	public void test2(){
+		ExecutorService executorService = Executors.newCachedThreadPool();
+		
+	}
 	
 	public static void main(String[] args) {
 		Thread thread1 = new Thread(new Runnable() {

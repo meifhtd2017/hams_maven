@@ -5,7 +5,6 @@ import java.lang.reflect.Proxy;
 
 /**
  * jdk基于接口实现动态代理
- * @author hurui
  *
  */
 public class ProxyTest {
